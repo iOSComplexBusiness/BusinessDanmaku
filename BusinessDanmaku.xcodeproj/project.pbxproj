@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E6BA59FC214FB020F0AC0BCE /* Pods_BusinessDanmaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A5BE299ADD65C934E21796 /* Pods_BusinessDanmaku.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C387D08D2E8904A600FBDF65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40A5BE299ADD65C934E21796 /* Pods_BusinessDanmaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessDanmaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9562EF9664CADF6A54206A03 /* Pods-BusinessDanmaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessDanmaku.debug.xcconfig"; path = "Target Support Files/Pods-BusinessDanmaku/Pods-BusinessDanmaku.debug.xcconfig"; sourceTree = "<group>"; };
+		974666024982C6FD4B1CA98E /* Pods-BusinessDanmaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessDanmaku.release.xcconfig"; path = "Target Support Files/Pods-BusinessDanmaku/Pods-BusinessDanmaku.release.xcconfig"; sourceTree = "<group>"; };
 		C387D0712E8904A300FBDF65 /* BusinessDanmaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessDanmaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C387D08C2E8904A600FBDF65 /* BusinessDanmakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessDanmakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C387D0962E8904A600FBDF65 /* BusinessDanmakuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessDanmakuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BA59FC214FB020F0AC0BCE /* Pods_BusinessDanmaku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03BEF081F6C38C7689AA515C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40A5BE299ADD65C934E21796 /* Pods_BusinessDanmaku.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36866C8A8C9CE01B7484E84E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9562EF9664CADF6A54206A03 /* Pods-BusinessDanmaku.debug.xcconfig */,
+				974666024982C6FD4B1CA98E /* Pods-BusinessDanmaku.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C387D0682E8904A300FBDF65 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +117,8 @@
 				C387D08F2E8904A600FBDF65 /* BusinessDanmakuTests */,
 				C387D0992E8904A600FBDF65 /* BusinessDanmakuUITests */,
 				C387D0722E8904A300FBDF65 /* Products */,
+				36866C8A8C9CE01B7484E84E /* Pods */,
+				03BEF081F6C38C7689AA515C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +139,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C387D09F2E8904A600FBDF65 /* Build configuration list for PBXNativeTarget "BusinessDanmaku" */;
 			buildPhases = (
+				1B3FAC6393C353785B9DA017 /* [CP] Check Pods Manifest.lock */,
 				C387D06D2E8904A300FBDF65 /* Sources */,
 				C387D06E2E8904A300FBDF65 /* Frameworks */,
 				C387D06F2E8904A300FBDF65 /* Resources */,
@@ -124,8 +152,6 @@
 				C387D0732E8904A300FBDF65 /* BusinessDanmaku */,
 			);
 			name = BusinessDanmaku;
-			packageProductDependencies = (
-			);
 			productName = BusinessDanmaku;
 			productReference = C387D0712E8904A300FBDF65 /* BusinessDanmaku.app */;
 			productType = "com.apple.product-type.application";
@@ -147,8 +173,6 @@
 				C387D08F2E8904A600FBDF65 /* BusinessDanmakuTests */,
 			);
 			name = BusinessDanmakuTests;
-			packageProductDependencies = (
-			);
 			productName = BusinessDanmakuTests;
 			productReference = C387D08C2E8904A600FBDF65 /* BusinessDanmakuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -170,8 +194,6 @@
 				C387D0992E8904A600FBDF65 /* BusinessDanmakuUITests */,
 			);
 			name = BusinessDanmakuUITests;
-			packageProductDependencies = (
-			);
 			productName = BusinessDanmakuUITests;
 			productReference = C387D0962E8904A600FBDF65 /* BusinessDanmakuUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -243,6 +265,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B3FAC6393C353785B9DA017 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BusinessDanmaku-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C387D06D2E8904A300FBDF65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -283,6 +330,7 @@
 /* Begin XCBuildConfiguration section */
 		C387D0A02E8904A600FBDF65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9562EF9664CADF6A54206A03 /* Pods-BusinessDanmaku.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +358,7 @@
 		};
 		C387D0A12E8904A600FBDF65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974666024982C6FD4B1CA98E /* Pods-BusinessDanmaku.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
