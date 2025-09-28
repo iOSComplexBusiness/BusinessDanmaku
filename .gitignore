@@ -1,0 +1,7 @@
+BusinessDanmaku.xcodeproj/xcuserdata/
+BusinessDanmaku.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+BusinessDanmaku.xcodeproj/project.xcworkspace/xcuserdata/
